@@ -9,7 +9,7 @@ public class Carol : MonoBehaviour
         EventBus.Subscribe<TestValueSignal>(GetSignal, 0);
     }
 
-    static void GetSignal(TestValueSignal signal)
+    private void GetSignal(TestValueSignal signal)
     {
        
         Debug.Log( signal.Value + "C");
